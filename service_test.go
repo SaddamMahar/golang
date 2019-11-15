@@ -16,7 +16,7 @@ import (
 
 func TestMain(m *testing.M) {
 	_ = os.Setenv("DATASTORE_EMULATOR_HOST", "localhost:8081")
-	_ = os.Setenv("PATH", "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/aaga/wbf/google-cloud-sdk/bin")
+	_ = os.Setenv("PATH", "")
 	code := m.Run()
 	os.Exit(code)
 }
